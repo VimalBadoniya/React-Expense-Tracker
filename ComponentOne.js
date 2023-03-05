@@ -7,6 +7,7 @@ function ComponentOne(props){
         <div className='left'>{props.date}</div>
         <div className='center'>${props.amount} </div>
         <div className='right'>{props.details}</div>
+        <div className='right'>{props.location}</div>
     </div>
     )
 }
