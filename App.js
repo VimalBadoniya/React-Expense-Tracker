@@ -23,9 +23,9 @@ function App() {
       Expense_Location : "France"
     },
   ];
-
-  return (
-    <div className="App">
+  for (let i = 0 ; i<=1 ; i++){
+       return (
+        <div className="App">
       <h1>Expense Tracker</h1>
 
       <GetData
@@ -34,20 +34,34 @@ function App() {
         Expense_details={data[0].Details}
         Expense_Location = {data[0].Expense_Location}
       ></GetData>
-      <GetData
-        Expense_date={data[1].date}
-        Expense_amount={data[1].Amount}
-        Expense_details={data[1].Details}
-        Expense_Location = {data[1].Expense_Location}
-      ></GetData>
-      <GetData
-        Expense_date={data[2].date}
-        Expense_amount={data[2].Amount}
-        Expense_details={data[2].Details}
-        Expense_Location = {data[2].Expense_Location}
-      ></GetData>
-    </div>
-  );
+      </div>
+       )
+  }
+
+  // return (
+  //   <div className="App">
+  //     <h1>Expense Tracker</h1>
+
+  //     <GetData
+  //       Expense_date={data[0].date}
+  //       Expense_amount={data[0].Amount}
+  //       Expense_details={data[0].Details}
+  //       Expense_Location = {data[0].Expense_Location}
+  //     ></GetData>
+  //     <GetData
+  //       Expense_date={data[1].date}
+  //       Expense_amount={data[1].Amount}
+  //       Expense_details={data[1].Details}
+  //       Expense_Location = {data[1].Expense_Location}
+  //     ></GetData>
+  //     <GetData
+  //       Expense_date={data[2].date}
+  //       Expense_amount={data[2].Amount}
+  //       Expense_details={data[2].Details}
+  //       Expense_Location = {data[2].Expense_Location}
+  //     ></GetData>
+  //   </div>
+  // );
 }
 
 export default App;
