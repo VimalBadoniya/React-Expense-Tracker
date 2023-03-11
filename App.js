@@ -1,7 +1,7 @@
 import "./App.css";
-
-import ExpenseDetails from "./components/ExpenseDetails";
-import "./UI and styles/ExpenseElement.css";
+import NewInput from "./components/NewExpense/NewInput";
+import ExpenseDetails from "./components/Expense/ExpenseDetails";
+import "./components/Expense/ExpenseElement.css";
 import React from "react";
 
 let App = () => {
@@ -32,9 +32,12 @@ let App = () => {
     return DivKey;
   };
 
-
+let attributeMine = (mydata)=>{
+  console.log(mydata , "transfer success");
+}
 
   let Alldiv = [];
+  Alldiv.push(<NewInput MyAttribute = {attributeMine}></NewInput>)
   for (let i = 0; i <= 2; i++) {
     Alldiv.push(
       <div className="expense-item" id={GetDivKey()}>
@@ -42,6 +45,7 @@ let App = () => {
           Expense_amount={data[i].Amount}
           Expense_details={data[i].Details}
           Expense_date={data[i].date}
+          
         ></ExpenseDetails>
         
       
