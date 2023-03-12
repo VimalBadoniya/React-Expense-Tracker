@@ -1,4 +1,4 @@
-import "../UI and styles/ExpenseElement.css";
+import "./ExpenseElement.css"
 let ExpenseDate = (property) => {
   return (
     <div className="expense-date">
