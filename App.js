@@ -9,7 +9,7 @@ let App = () => {
 
   let AddExpenseHandler = (newExpense) => {
     setData((oldData) => {
-      console.log(oldData);
+      
       return [newExpense , ...oldData]
     });
   };
@@ -17,13 +17,15 @@ let App = () => {
   let [selectedYear , setYear] = useState("2020")
   let yearChangeHandler  = (year)=>{
        setYear(year)
+      
+
   }
 
   return (
     <div>
       <ExpenseForm onAddExpense={AddExpenseHandler}></ExpenseForm>
       <ExpenseFilter selectedYear={selectedYear} onYearChange={yearChangeHandler}></ExpenseFilter>
-      <AllExpenses allData={data}></AllExpenses>
+      <AllExpenses allData={data} selectedYear={selectedYear}></AllExpenses>
     </div>
   );
 };
