@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  color: greenyellow;
+  background-color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+header {
+  margin: 15px;
+  background-color: black;
+  color: greenyellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 2px solid greenyellow;
+  border-bottom: 2px solid greenyellow;
+  border-radius: 12px;
+}
+a {
+  margin: 10px;
+  color: greenyellow;
+  text-decoration: none;
+}
+a:active {
+  text-decoration: underline;
+}
+input {
+  width: 20rem;
+  height: 2rem;
+  background-color: black;
+  border: 2px solid greenyellow;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 2px greenyellow;
+  margin: 15px;
+  color: greenyellow;
+}
+input:focus {
+  background-color: black;
+  color: greenyellow;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px black inset;
+  -webkit-text-fill-color: greenyellow;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid greenyellow;
+  border-radius: 8px;
+  box-shadow: 0 0 2px 2px greenyellow;
+  margin: 15px;
+  max-width: 50rem;
+  max-height: 20rem;
+  min-width: 30rem;
+  min-height: 15rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  color: greenyellow;
+  background-color: black;
+  border: 2px solid greenyellow;
+  font-size: x-large;
+  margin: 10px;
+  border-radius: 8px;
+}
+button:hover {
+  background-color: greenyellow;
+  color: black;
+  border: 2px solid black;
+}
+h2 {
+  color: greenyellow;
+}
